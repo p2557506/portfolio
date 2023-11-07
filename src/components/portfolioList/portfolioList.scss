@@ -1,0 +1,13 @@
+@import "../../global.scss";
+li{
+    font-size: 1rem;
+    margin-right: 2rem;
+    padding: 0.25em;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    
+    &.active{
+        background-color: $mainColor;
+        color: white;
+    }
+}
