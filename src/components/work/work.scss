@@ -1,0 +1,91 @@
+.work{
+    height: 100vh;
+    
+
+    .specificSection{
+        width: 100%;
+//-Height of navbar to stop overflow
+        scroll-behavior: smooth;
+        padding: 1rem;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;//firefox
+        display: flex;
+        
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .left{
+            flex: 0.5;
+            position: relative;
+            top: 70px;
+            background-color: lightblue;
+            height: calc(100vh - 70px);
+            margin: 0 1rem;
+
+            .header{
+                margin-bottom: 1rem;
+                display: flex;
+                gap: 1rem;
+                justify-content: space-between;
+                
+                .appIntro{
+                    
+                }
+            }
+            .techContainer{
+                h2{
+                    
+                }
+                .techStack{
+                    display: flex;
+                    gap: 1rem;
+                    svg{
+                        color: black;
+                        font-size: 3rem;
+                        
+                    }
+                }
+            }
+            
+            .technicalDetails{
+                margin-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .appInteract{
+                display: flex;
+                justify-content: center;
+            button{
+                border: none;
+                padding: 1rem;
+                font-size: 1rem;
+                background-color: white;
+                border: 1px solid lightgray;
+                border-radius: 1rem;
+                
+            }
+            margin-bottom: 1rem;
+            }
+            .examples{
+                .exampleImage{
+
+                }
+            }
+        }
+        .right{
+            position: relative;
+            top: 70px;
+            margin-right: 1rem;
+            height: calc(100vh - 70px);
+            background-color: red;
+            flex: 0.5;
+        }
+
+       
+
+
+        
+    }
+}

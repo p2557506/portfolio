@@ -30,15 +30,19 @@
                 color: inherit;
                 display: flex;
                 align-items: center;
-                gap: 1rem;
+                gap: 2rem;
                 .contactContainer{
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
-                    .icon{
-                        font-size: 1rem;
-                        margin-right: 0.25rem;
-                    }
+                    a, a:visited, a:hover, a:active {
+                        color: inherit;
+                        .icon{
+                            font-size: 1.5rem;
+                            margin-right: 0.25rem;
+                            
+                        }
+                      }
                     span{
                         font-size: 1rem;
                         font-weight: 400;

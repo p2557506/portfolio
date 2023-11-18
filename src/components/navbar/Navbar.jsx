@@ -3,6 +3,9 @@ import  "./navbar.scss"
 import { Link } from 'react-router-dom'
 import EmailIcon from '@mui/icons-material/Email';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 const Navbar = ({menuOpen,setMenuOpen}) => {
 
 
@@ -26,6 +29,16 @@ const Navbar = ({menuOpen,setMenuOpen}) => {
 
               <SmartphoneIcon className="icon"/>
               <span>+44 79 2330 2593</span>
+            </div>
+            <div className="contactContainer">
+              <a href="https://github.com/p2557506"><GitHubIcon className="icon"/></a>
+              
+              
+            </div>
+            <div className="contactContainer">
+              <a href="https://www.linkedin.com/in/isaaczerououl/"><LinkedInIcon className="icon"/></a>
+              
+              
             </div>
 
           </div>

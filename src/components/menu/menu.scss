@@ -22,12 +22,12 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        font-size: 2rem;
         font-weight: 300;
         color: white;
         width: 60%;//Stops changing width with font size
         
         li{
+            font-size: 2rem;
             margin-bottom: 1.5rem;
             &:hover{
                 font-weight: 500;
