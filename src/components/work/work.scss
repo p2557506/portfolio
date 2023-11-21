@@ -15,16 +15,17 @@
             display: none;
         }
         .left{
-            flex: 0.5;
+            flex: 0.75;
             position: relative;
             top: 70px;
-            background-color: lightblue;
+            
             height: calc(100vh - 70px);
             margin: 0 1rem;
 
             .header{
                 margin-bottom: 1rem;
                 display: flex;
+                
                 gap: 1rem;
                 justify-content: space-between;
                 
@@ -51,12 +52,43 @@
                 margin-bottom: 1rem;
                 display: flex;
                 flex-direction: column;
-                gap: 1rem;
+                
+                h2{
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                p{
+                    font-size: 1.25rem;
+
+                }
             }
+
+            .retrospectiveContainer{
+                display: flex;
+                gap: 1rem;
+                
+
+                .purposeContainer{
+                    width: 700px;
+                    background-color: red;
+                    h2{
+                        font-size: 2rem;
+                        
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.25rem;
+                    font-size: 1.25rem;
+                }
+            }
+
             
             .appInteract{
                 display: flex;
                 justify-content: center;
+                margin-top: 1rem;
             button{
                 border: none;
                 padding: 1rem;
@@ -64,13 +96,17 @@
                 background-color: white;
                 border: 1px solid lightgray;
                 border-radius: 1rem;
+                cursor: pointer;
                 
             }
             margin-bottom: 1rem;
             }
             .examples{
                 .exampleImage{
-
+                    width: 100%;
+                    img{
+                        
+                    }
                 }
             }
         }
@@ -80,7 +116,7 @@
             margin-right: 1rem;
             height: calc(100vh - 70px);
             background-color: red;
-            flex: 0.5;
+            flex: 0.25;
         }
 
        
