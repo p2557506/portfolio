@@ -31,12 +31,12 @@ const Navbar = ({menuOpen,setMenuOpen}) => {
               <span>+44 79 2330 2593</span>
             </div>
             <div className="contactContainer">
-              <a href="https://github.com/p2557506"><GitHubIcon className="icon"/></a>
+              <a href="https://github.com/p2557506" target="_blank"><GitHubIcon className="icon"/></a>
               
               
             </div>
             <div className="contactContainer">
-              <a href="https://www.linkedin.com/in/isaaczerououl/"><LinkedInIcon className="icon"/></a>
+              <a href="https://www.linkedin.com/in/isaaczerououl/" target="_blank"><LinkedInIcon className="icon"/></a>
               
               
             </div>

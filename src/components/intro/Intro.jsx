@@ -2,6 +2,10 @@ import React, { useEffect, useRef } from 'react'
 import "./intro.scss"
 import { init } from 'ityped'
 
+//Intro Images
+import shot1 from "../../assets/mev2.png"
+//Dwn Arrow
+import dwnArw from "../../assets/downArw.png"
 const Intro = () => {
 
   const textRef = useRef();
@@ -22,7 +26,7 @@ const Intro = () => {
       
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/mev2.png" alt="" />
+          <img src={shot1} alt="" />
         </div>
       </div>
       <div className="right">
@@ -33,7 +37,7 @@ const Intro = () => {
           <h3><span></span><span ref={textRef}></span></h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/downArw.png" alt="" />
+          <img src={dwnArw} alt="" />
         </a>
       </div>
     </div>
