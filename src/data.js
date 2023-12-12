@@ -44,6 +44,12 @@ export const webPortfolio = [
         img: worldeShowcase,
         desc:"App clone that mimics the functionality of the famous Wordle Game. Figure out the secret five letter word within 6 guesses"
     },
+    {
+        id: 3,
+        title: "BookLogger",
+        img: "",
+        desc:"Full Stack Website allowing users to create an account, add books to their wishlist, completed archive or backlog (Coming soon)"
+    },
     
 ]
 export const gamePortfolio = [
@@ -70,9 +76,9 @@ export const gamePortfolio = [
 export const mobilePortfolio = [
     {
         id: 1,
-        title: "Coming Soon",
+        title: "Alakazam",
         img: "",
-        desc:"Coming soon"
+        desc:"App clone capable of identifying songs based on unique audio cues (Coming soon)"
     },
     
     

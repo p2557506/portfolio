@@ -69,7 +69,7 @@ const Portfolio = () => {
             <h3>{d.title}</h3>
           </div>
           </Link>
-          <p>{d.desc}</p>
+            <p>{d.desc}</p>
         </div>
             ))}
         

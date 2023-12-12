@@ -72,10 +72,10 @@ const Work = () => {
           techStack1: <FontAwesomeIcon icon={faUnity} />,
           techStack2: <img src={charp} width="50px" ></img>,
           
-          details: "2D Platformer game containing 3 distinct levels and and a final boss stage.",
-          purposeAndGoals: "This game was designed to be a compact and enjoyable experience for the player. Different enemy types were included to give the player unique challenges with an intention to keep them engaged. Different movement mechanics were also implemented to allow the player to be creative in the way they tackled obstacles. After beating the 3 levels the player would face a final boss enemy which would be much tougher than previous enemies encountered. 'Deathbringer' has a larger pool of health, ranged and close combat attacks and a 2nd phase offering a different challenge to the player",
-          problemsFaced:"Thinking about how and why games were designed in the way they were presented a learning curve. Through extensive research by studying game design case studies, listening to game developer and interviews and taking inspiration from famous titles such as 'Hollow Knight' and 'Super Mario World' I was able to get a better grasp on level design, rewards, goals and immersion",
-          lessonsLearned:"Creating 'Atonement' was my first real experience with using the Unity game engine. I learnt a great deal about colliders, vectors, scripting , animations, ai behaviours and grew much more familiar with C#. My knowledge of fundamental game design principles grew and my passion for game development was now born ",
+          details:  "2D Platformer game containing 3 distinct levels and and a final boss stage.",
+          purposeAndGoals: <div className="container"><p>This game was designed to be a compact and enjoyable experience for the player.</p> <p>Different enemy types were included to give the player unique challenges with an intention to keep them engaged.</p><p> Different movement mechanics were also implemented to allow the player to be creative in the way they tackled obstacles.</p><p>After beating the 3 levels the player would face a final boss enemy which would be much tougher than previous enemies encountered. 'Deathbringer' has a larger pool of health, ranged and close combat attacks and a 2nd phase offering a different challenge to the player</p></div> ,
+          problemsFaced: <div className="container"><p>Thinking about how and why games were designed in the way they were presented a learning curve.</p> <p>Through extensive research by studying game design case studies, listening to game developer and interviews and taking inspiration from famous titles such as 'Hollow Knight' and 'Super Mario World' I was able to get a better grasp on level design, rewards, goals and immersion</p></div>,
+          lessonsLearned: <div className="container"><p>Creating 'Atonement' was my first real experience with using the Unity game engine.</p> <p>I learnt a great deal about colliders, vectors, scripting , animations, ai behaviours and grew much more familiar with C#</p><p>My knowledge of fundamental game design principles grew and my passion for game development was now born</p></div>,
           img1:atonementImg1,
           img2:"",
           img3:"",
@@ -88,9 +88,9 @@ const Work = () => {
           techStack2: <FontAwesomeIcon icon={faHtml5} />,
           
           details: <p>Website to help users learn about Naruto lore and provide them with a watching guide to follow the narrative without filler</p>,
-          purposeAndGoals: <p></p>,
-          problemsFaced:"I developed this website out of a passion for the Naruto universe to help both old and new watchers learn about the characters in the show aswell as provide a watching guide without the filler ",
-          lessonsLearned:"I developed this website out of a passion for the Naruto universe to help both old and new watchers learn about the characters in the show aswell as provide a watching guide without the filler ",
+          purposeAndGoals: <div className="container"><p>Built this app clone to better understand the resaoning behind its design and coding decisions.</p> <p>To expand on the current worlde game by by adding additional themed game modes to add variety and alter difficulty.</p></div>,
+          problemsFaced: <div className="container"><p>Handling the conditional logic of colouring in letters based on their existence and position in the word.</p><p></p></div>,
+          lessonsLearned: <div className="container"><p>Gained more experience with useContext hook to make accessing components throughout the application much more effecient and maintainable.</p></div>,
           img1:wordleImg1,
           img2:"",
           img3:"",
@@ -130,8 +130,8 @@ const Work = () => {
     <div className="work" key={workId}>
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-            
         <div className="specificSection" >
+        
           <div className="left">
 
                     <h1>Project</h1>

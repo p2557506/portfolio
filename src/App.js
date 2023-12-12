@@ -16,7 +16,7 @@ Section : Intro, Portfolio, Work... testimonials */}
   return (
     <div className="app">
       
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/work/:id" element={<Work/>}/>

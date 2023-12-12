@@ -6,6 +6,7 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+
 const Navbar = ({menuOpen,setMenuOpen}) => {
 
 
