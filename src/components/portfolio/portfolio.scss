@@ -45,6 +45,8 @@
             width: 40%;
             flex-direction: column;
             align-items: center;
+            border: 1px solid gray;
+            
             
             @include mobile{
                 width: 70%;
@@ -52,24 +54,22 @@
             }
             
             
-            .item{
+            .itemImage{
                
                 
-                margin: 1rem 2rem;
-                border: 1px solid lightgray;
-                border-radius: 0.25rem;
+                
+                
+                
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: white;
                 position: relative;
                 transition: all 0.5s ease;
-                cursor: pointer;
                 
                 
-                h3{
-                    position: absolute;
-                }
+                
+                
                 
                 
                 img{
@@ -80,18 +80,63 @@
                     
                     
                 }
-                &:hover{
-                    background-color: $mainColor;
-                    img{
-                        opacity: 0.5;
-                        z-index: 0;
-                    }
-                }
-            }
-            p{
-                margin: 1rem 2rem;
                 
             }
+            .itemInfo{
+                padding: 1rem;
+                .itemTechStack{
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    .tech{
+                        display: flex;
+                        gap: 1rem;
+                        font-size: 2rem;
+                    }
+                }
+                
+
+                .buttons{
+                    display: flex;
+                    gap: 1rem;
+                    .codeBtn{
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid $mainColor;
+                        border-radius: .5rem;
+                        font-size: 1.5rem;
+                        padding: 0 1rem;
+                        background-color: transparent;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+                        &:hover{
+                            background-color: $mainColor;
+                            color: white;
+                        }
+                    }
+                    .liveBtn{
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.5rem;
+                        padding: 0.5rem 1rem;
+                        border: 1px solid $mainColor;
+                        border-radius: .5rem;
+                        background-color: transparent;
+                        cursor: pointer;
+                        transition: all 0.5s ease;
+    
+                        &:hover{
+                            background-color: $mainColor;
+                            color: white;
+                        }
+                    }
+                }
+                p{
+                    margin: 1rem 0;
+                    
+                }
+            }
+
         }
     }
 

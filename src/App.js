@@ -19,7 +19,7 @@ Section : Intro, Portfolio, Work... testimonials */}
       <BrowserRouter basename="/portfolio">
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/work/:id" element={<Work/>}/>
+        
       </Routes>
       </BrowserRouter>
     </div>

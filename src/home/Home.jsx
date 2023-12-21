@@ -8,6 +8,8 @@ import Contact from "../components/contact/Contact";
 import { useState } from "react";
 import Menu from "../components/menu/Menu";
 import "./home.scss"
+import About from '../components/about/About';
+
 
 
 
@@ -20,9 +22,10 @@ const Home = () => {
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       </div>
       <div className="sections">
-        <div className="introSection">
+      <div className="introSection">
           <Intro/>
         </div>
+        
         <div className="portfolioSection">
           <Portfolio/>
         </div>

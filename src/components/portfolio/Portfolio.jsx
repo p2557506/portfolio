@@ -2,8 +2,13 @@ import React, { useState,useEffect } from 'react'
 import "./portfolio.scss"
 import { Link } from 'react-router-dom';
 import PortfolioList from '../portfolioList/PortfolioList';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import PublicIcon from '@mui/icons-material/Public';
 
 import {featuredPortfolio, gamePortfolio, webPortfolio, mobilePortfolio} from "../../data.js"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+
 const Portfolio = () => {
 
   const [selected,setSelected] = useState("featured");
@@ -63,13 +68,25 @@ const Portfolio = () => {
           {data.map(d =>(
         <div className="projectContainer">
 
-            <Link to={`/work/${d.id}`}>
-          <div className="item">
+            
+          <div className="itemImage">
             <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
+            
           </div>
-          </Link>
-            <p>{d.desc}</p>
+          <div className="itemInfo">
+            <h3 className="itemTitle">{d.title}</h3>
+            <div className="itemTechStack">
+              <div className="heading"><p>Tech Stack:</p></div>
+              <div className="tech"><p>{d.techStack1}</p><p>{d.techStack2}</p><p>{d.techStack3}</p></div>
+              
+            </div>
+            <p className="itemDescription">{d.desc}</p>
+            <div className="buttons">
+              <button className="codeBtn"><GitHubIcon />Code</button>
+              <button className="liveBtn"><PublicIcon/>Live</button>
+            </div>
+
+          </div>
         </div>
             ))}
         
