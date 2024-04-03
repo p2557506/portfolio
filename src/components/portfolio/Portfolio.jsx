@@ -27,10 +27,7 @@ const Portfolio = () => {
       id: "game",
       title: "Game App"
     },
-    {
-      id: "mobile",
-      title: "Mobile App"
-    },
+    
 
   ];
 
@@ -45,9 +42,7 @@ const Portfolio = () => {
           case "game":
         setData(gamePortfolio);
         break;
-        case "mobile":
-        setData(mobilePortfolio);
-        break;
+        
       default:
         setData(featuredPortfolio)
         break;
@@ -82,7 +77,7 @@ const Portfolio = () => {
             </div>
             <p className="itemDescription">{d.desc}</p>
             <div className="buttons">
-              <button className="codeBtn"><GitHubIcon />Code</button>
+              <button className="codeBtn"><GitHubIcon /><a href={d.codeLink} target="_blank">Code</a></button>
               <button className="liveBtn"><PublicIcon/>Live</button>
             </div>
 
