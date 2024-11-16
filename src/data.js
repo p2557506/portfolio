@@ -19,7 +19,7 @@ export const featuredPortfolio = [
         techStack2: <FontAwesomeIcon icon={faReact} />,
         techStack3: <FontAwesomeIcon icon={faNode} />,
         img: bookLoggerShowcase,
-        codeLink:"https://github.com/p2557506/2D-Platformer-Game-Ghost-Vania",
+        codeLink:"https://github.com/p2557506/book-logger",
         desc:"Full-Stack Application (SERN) that allows the user to track the books they're reading, have read and want to read. Functioning register and login processes that incorporate both authorization and authentication",
     },
     {

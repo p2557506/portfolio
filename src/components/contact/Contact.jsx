@@ -2,6 +2,7 @@ import React, { useState,useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import "./contact.scss";
 import shake from "../../assets/shake.svg"
+import { Spa } from '@mui/icons-material';
 const Contact = () => {
 
   const [message,setMessage] = useState(false)
@@ -11,12 +12,18 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    emailjs
+      .sendForm('service_rodecq2', 'template_d5e11wf', form.current,
+        'qR7eSQagJehOReGdM',
+      )
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
   return (
     <div className="contact" id="contact">
@@ -34,6 +41,7 @@ const Contact = () => {
           <label>Message</label>
           <textarea name="message" />
           <input type="submit" value="Send" />
+          
       </form>
       </div>
     </div>

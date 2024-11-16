@@ -37,6 +37,12 @@
       align-items: center;
       gap: 1rem;
 
+      label{
+        overflow: hidden;
+        padding: 10px;
+        
+      }
+
       input {
         width: 300px;
         height: 30px;
@@ -68,9 +74,12 @@
         background-color: green;
         border: none;
         font-size: 1rem;
-        border-radius: 1rem;
+        border-radius: 10px;
         padding: 0.5rem 2rem;
         font-weight: 500;
+        display: flex;
+        align-items: center;
+        overflow-y: hidden;
         cursor: pointer;
 
         &:focus {
