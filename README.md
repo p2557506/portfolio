@@ -6,8 +6,9 @@ A portfolio built with React showcasing numerous projects I have built.
 
 Work in Progress...
 
-Left to Complete:
--Contact Page
--Portfolio Display
+Fixes to make:
+-Inconsistent menu bar links 
+-Live links for each project
+-Notification to let user know their message has been sent 
 
 
